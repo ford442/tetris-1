@@ -1,5 +1,5 @@
 targets += st
 
-st: CFLAGS += -std=c99 `sdl2-config --cflags`
-st: LDLIBS += `sdl2-config --libs`
+st: CFLAGS += -std=c99 -sUSE_SDL=2
+st: LDLIBS += 
 st: st.c tetris.o val.o
