@@ -9,8 +9,8 @@ variants :=  sdl2
 include $(patsubst %,%.mk,$(variants))
 
 index.html:
-	emcc -O2 s1.c tetris.c val.c -o s1.bc
-	emcc s1.bc -O2 -o tetris.js -sUSE_SDL=2
+	emcc -O2 s12.c tetris.c val.c -o s1.bc  -sUSE_SDL=2
+	emcc s12.bc -O2 -o tetris.js -sUSE_SDL=2
 
 all: ${targets} index.html
 
