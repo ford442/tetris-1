@@ -5,7 +5,7 @@ objs    := val.o tetris.o
 
 all:
 
-variants := gtk3 sdl2 sdl1 test
+variants :=  sdl2  
 include $(patsubst %,%.mk,$(variants))
 
 index.html:
